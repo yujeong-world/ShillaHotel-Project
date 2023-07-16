@@ -23,7 +23,7 @@ JavaScript와 JQuery를 사용하여 슬라이드 및 애니메이션을 중심�
   <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
 -  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 - <img src="https://img.shields.io/badge/visualcode-#007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
-
+- <img src="https://img.shields.io/badge/visualcode-#007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
 ## 주요 기능
 
 신라호텔 웹 페이지 리뉴얼 프로젝트
