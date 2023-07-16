@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./img/shilla.ico">
+
+    <!--구글 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<!--구글아이콘-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<!--구글아이콘 화살표-->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+<!--bootstrap Icon 부트스트랩 아이콘 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!--스와이퍼슬라이더-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> 
+
+    <!-- gshap 애니메이션 -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <!--매직스크롤-->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+
+</head>
+<body>
+    <header>
+        <div class="buger-body">
+    
+    <a href="#" class="buger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    </div>
+    <div id="wrap">
+            <div class="overlay">
+            <h1 class="logo"><img src="./img/logo.png" alt="신라호텔로고"></h1>
+            <nav class="menu">
+                <ul>
+                    <li class="main-menu">
+                        <a href="#" class="main-menu-text1">Offers</a>
+                        <ul class="sub-menu-container">
+                            <li class="sub-menu-inner"><a href="#">Package</a></li>
+                            <li><a href="#">Event</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="./room/room.html" class="main-menu-text1">Accommodation</a>
+                        <ul class="sub-menu-container">
+                            <li class="sub-menu-inner"><a href="#">Standard</a></li>
+                            <li><a href="#">Executive</a></li>
+                            <li><a href="#">Suite</a></li>
+                            <li><a href="#">The Executive Lounge</a></li>
+                            <li><a href="#">All Rooms</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#" class="main-menu-text1">Dining</a>
+                        <ul class="sub-menu-container">
+                            <li class="sub-menu-inner"><a href="#">Standard</a></li>
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Lounge & Bar</a></li>
+                            <li><a href="#">Bakery</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="./LifeStyle/lifeStyle.html" class="main-menu-text1">Life Style</a>
+                        <ul class="sub-menu-container">
+                            <li class="sub-menu-inner"><a href="#">Outdoor Pool</a></li>
+                            <li><a href="#">spa</a></li>
+                            <li><a href="#">Fitness</a></li>
+                            <li><a href="#">Walking Tralis</a></li>
+                            <li><a href="#">Shopping</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="./wedding/wd.html" class="main-menu-text1">Meeting & Event</a>
+                        <ul class="sub-menu-container">
+                            <li class="sub-menu-inner"><a href="#">Wedding</a></li>
+                            <li><a href="#">Meetings</a></li>
+                            <li><a href="#">Celebrations</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#" class="main-menu-text1">Gallery</a>
+                        <ul class="sub-menu-container">
+                            <li class="sub-menu-inner"><a href="#">photo</a></li>
+                            <li><a href="#">video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main-box">
+            <ul id="main-menu">
+                <li class="menu-img"><a href="#"><img src="./img/logo-menu.png" alt=""></a></li>
+                <li class="reservation"><a href="#">Reservation</a></li>
+                <li class="item offer">
+                    <a href="#" class="item-name">Offers</a>
+                    <div class="content-menu">
+                        <ul class="inner">
+                            <li><a href="#">Package</a></li>
+                            <li><a href="#">Event</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="./room/room.html" class="item-name">Accommodation</a>
+                    <div class="content-menu">
+                        <ul class="inner">
+                            <li><a href="#">Standard</a></li>
+                            <li><a href="#">Executive</a></li>
+                            <li><a href="#">Suite</a></li>
+                            <li><a href="#">The Executive Lounge</a></li>
+                            <li><a href="#">All Rooms</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="item-name">Dining</a>
+                    <div class="content-menu">
+                        <ul class="inner">
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Lounge & Bar</a></li>
+                            <li><a href="#">Bakery</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="./LifeStyle/lifeStyle.html" class="item-name">Life Style</a>
+                    <div class="content-menu">
+                        <ul class="inner">
+                            <li><a href="#">Outdoor Pool</a></li>
+                            <li><a href="#">spa</a></li>
+                            <li><a href="#">Fitness</a></li>
+                            <li><a href="#">Walking Tralis</a></li>
+                            <li><a href="#">Shopping</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="./wedding/wd.html" class="item-name">Meeting & Event</a>
+                    <div class="content-menu">
+                        <ul class="inner">
+                            <li><a href="#">Wedding</a></li>
+                            <li><a href="#">Meetings</a></li>
+                            <li><a href="#">Celebrations</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="item-name">Gallery</a>
+                    <div class="content-menu">
+                        <ul class="inner">
+                            <li><a href="#">photo</a></li>
+                            <li><a href="#">video</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="video-area header-content">
+        <!--비디오 영역-->
+        <video class="main-video" autoplay loop muted>
+            <source src="./slila.mp4">
+        </video>
+        <!--텍스트 애니메이션-->
+        <div class="text_anmation">
+            <div class="show1">Urban</div> 
+            <div> 
+                <span class="show2">Lifestyle Hotel</span>
+            </div>
+        </div>
+
+        <!--날자폼-->
+        <div class="date-form">
+            <div class="wrapper">
+                <label for="datepicker1">CHECK IN
+                    <input type="text" id="datepicker1" autocomplete="off" placeholder="날짜 선택">
+                </label>	
+            </div>
+            <div class="wrapper wrapper2">
+                <label for="datepicker2">CHECK OUT
+                    <input type="text" id="datepicker2" autocomplete="off" placeholder="날짜 선택">
+                </label>	
+            </div>
+            <div class="room-selector selector">
+                <div class="title">Room</div>
+                <div class="selectbox">
+                    <select id="ex_select">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="adult-selector selector">
+                <div class="title">Adult</div>
+                <div class="selectbox">
+                    <select id="ex_select">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="child-selector selector">
+                <div class="title">Child</div>
+                <div class="selectbox">
+                    <select id="ex_select">
+                        <option selected>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="serch"><a href="#">Serch</a></div>
+        </div>
+    </div>
+</header>
+    <section class="welcom-box">
+        <div class="welcom-container">
+            <div class="welcom-text1">Welcom to The Shilla  Hotel Seoul</div>
+            <div class="welcom-text2">Luxury Korean Hotel Brande since 1973</div>
+            <div class="readMore-btn"><a href="#">Read More</a> </div>
+        </div>
+        <div class="welcom-horizon"></div>
+    </section>
+
+    <section class="RoomPackage">
+        <div class="RoomPackage-main-text">Room Package</div>
+        <div class="RoomPackage-container">
+            <div class="RoomPackage1 RoomPackage-all">
+                <div class="scale-img">
+                    <img src="./img/package-spa.png" alt="패키지스파">
+                </div>
+                <div class="RoomPackage-text">
+                    <div class="RoomPackage-text1">pleasant Morning</div>
+                    <div class="RoomPackage-horizon"></div>
+                    <div class="RoomPackage-text2">A pleasant morning full of joy<br>
+                    2022.01.01~2023.06.30</div>
+                </div>
+
+            </div>
+            <div class="RoomPackage-container2 RoomPackage-all">
+                <div class="RoomPackage2">
+                    <div class="scale-img">
+                        <img src="./img/package-business.png" alt="패키지비즈니스">
+                    </div>
+                    <div class="RoomPackage-text">
+                        <div class="RoomPackage-text1">Business Package</div>
+                        <div class="RoomPackage-horizon"> </div>
+                        <div class="RoomPackage-text2">Plan for smart business with a practical package<br>
+                        2022.01.01~2023.06.30</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="RoomPackage-container3 RoomPackage-all">
+                    <div class="RoomPackage3">
+                        <div class="scale-img">
+                            <img src="./img/package-bed.png" alt="패키지조식">
+                        </div> 
+                        <div class="RoomPackage-text">
+                            <div class="RoomPackage-text1">Bed and Breakfast</div>
+                            <div class="RoomPackage-horizon"></div>
+                            <div class="RoomPackage-text2">start a lively day with The parkview Breakfast<br>
+                                2022.01.01~2023.06.30</div>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="main-slid">
+        <div class="main-slid-mainText">Facilities & Amenities</div>
+        <!--스와이퍼 슬라이드 부분-->
+        <div class="mySwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slid-famliy-room.png" alt="슬라이드이미지1">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Family Weekday Getaway</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">사랑하는 아이와 함께 보내는 뜻 깊은 휴식<br>
+                        2023.01.16~2023.03.31</div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slid-pool.png" alt="슬라이드이미지2">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Urban Island</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">따듯한 햇살 아래 어반 아일랜드에서 즐기는 온수풀 수영<br>
+                        2023.03.11~2023.04.30</div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slid-lounge.png" alt="슬라이드이미지3">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Our Lounge Moment</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">사랑하는 사람들과 즐기는 겨울날의 휴식<br>
+                        2023.01.04~2023.02.27</div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slid-breakfast.png" alt="슬라이드이미지4">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Morning delights</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">룸서비스 조식으로 즐기는 여유로운 휴식<br>
+                        2023.01.01~2023.03.31</div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slid-app-stay.png" alt="슬라이드이미지5">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Mobile App 6 to 6</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">24시간 스테이로 즐기는 알찬 휴식<br>
+                        2023.01.01~2023.02.27</div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slid-spa.png" alt="슬라이드이미지6">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Shilla Spa</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">몸과 마음이 편안해지는 재충전의 시간<br>
+                        2023.01.01~2023.03.31</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slide-dinner.png" alt="슬라이드이미지7">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Rewards Free Lounge & Bar</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">라운지 바에서 맥주와 메뉴를 즐기며 여유로운 시간<br>
+                        2023.01.18~2023.03.31</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slid-img">
+                        <img src="./img/slide-delight.png" alt="슬라이드이미지8">
+                    </div>
+                    <div class="slid-text">
+                        <div class="slid-text1">Rewards Standard Delight</div>
+                        <div class="slid-horizon"></div>
+                        <div class="slid-text2">셰프 추천 주류와 요리의 페어링과 함게 깊어가는 밤을 만끽해보세요.<br>
+                        2023.01.01~2023.03.31</div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+    
+    
+            </div>
+
+        </div>
+
+        <div class="main-slid-horizon"></div>
+
+    </section>
+
+    <section class="event scroll-spy">
+        <div class="event-box">
+            <div class="event-main-text">Event</div>
+            <div class="event1-container event-container">
+                <div class="event1-img back-to-positon to-right delay-1"><img src="./img/event-palsun.png" alt="이벤트이미지"></div>
+                <div class="event-text1 event-text">
+                    <div class="event1-img2 back-to-positon to-left delay-2 text1">서울 신라호텔 팔선<br>
+                        <span>중국 8대 요리<br>
+                            프로모션</span> </div>
+                    <div class="event1-text2 back-to-positon to-left delay-3 text2">신년길상 신년 이벤트 메뉴 <br>
+                        2023.01.01~2023.02.28 <br>
+                        새해를 맞이하여 고객 여러분의 복을 기원하는 메뉴를 선보입니다. <br>
+                        건금사, 통전복, 가자미 등 팔선의 특선 식재료를 활용한 메뉴와 함께 <br>
+                        새로운 한 해를 시작해보시기 바랍니다.</div>
+                    <div class="event1-btn back-to-positon to-left delay-4 event-btn">
+                        <a href="#">자세히 보기</a> </div>
+                </div>
+            </div>
+    
+            <div class="event2-container event-container scroll-spy">
+    
+                <div class="event-text2 event-text">
+                    <div class="event2-img2 back-to-positon to-right delay-2 text1">서울 신라호텔 아리아케<br>
+                        <span>겨울 제철 복어 <br>
+                        프로모션</span> </div>
+                    <div class="event2-text2 back-to-positon to-right delay-3 text2">겨울 제철 복 이벤트 메뉴<br>
+                        2022.12.5~2023.02.25<br>
+                        찬 바람이 부는 계절 생각나는 복 요리.<br>
+                        국내산 참복어를 엄선해 만든 복 사시미, 복 튀김, 복 지리 등<br>
+                        식재료 본연의 맛을 느낄 수 있는 다양한 복 요리를 즐겨보시기 바랍니다.
+                        .</div>
+                    <div class="event2-btn back-to-positon to-left delay-4 event-btn">
+                        <a href="#"> 자세히 보기</a></div>
+                </div>
+                <div class="event2-img back-to-positon to-left delay-1"><img src="./img/event-ariake.png" alt="이벤트이미지"></div>
+    
+            </div>
+    
+            <div class="event3-container event-container scroll-spy">
+                <div class="event3-img back-to-positon to-right delay-1"><img src="./img/event-thelibrary.png" alt="이벤트이미지"></div>
+                <div class="event-text3 event-text">
+                    <div class="event3-img2 back-to-positon to-left delay-2 text1">서울 신라호텔 더 라이브러리<br>
+                        <span>눈꽃 딸기 빙수</span></div>
+                    <div class="event3-text2 back-to-positon to-left delay-3 text2">겨울 제철 딸기 빙수<br>
+                        2022.12.12~2023.02.25<br>
+                        프리미엄 딸기 위로 고즈넉히 내린 하얀 눈곷. <br>
+                        더 라이브러리가 새콤달콤한 생딸기를 가득 담은 딸기빙수를 선보입니다.
+                        </div>
+                    <div class="event3-btn back-to-positon to-left delay-4 event-btn">
+                        <a href="#">자세히 보기</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="gallery">
+                <div class="card">
+                    <img src="./img/full_img01.png" alt="">
+                    <div class="info">
+                        <h4 class="title">MY SPECIAL WEDDING</h4>
+                        <div class="text">인생의 가장 빛나는 순간을 신라호텔과 함께하세요.</div>
+                        <div class="btn"><a href="#">VIEW MORE</a></div>
+                    </div>
+            </div>
+                <div class="card">
+                    <img src="./img/full_img03.png" alt="">
+                    <div class="info">
+                        <h4 class="title">SHILLA HOTEL SOUEL STORY</h4>
+                        <div class="text">1973년 시작된 스토리를 담았습니다.</div>
+                        <div class="btn"><a href="#">VIEW MORE</a></div>
+                    </div>
+            </div>
+                <div class="card">
+                    <img src="./img/full_img02.png" alt="">
+                    <div class="info">
+                        <h4 class="title">CONCIERGE SERVICE</h4>
+                        <div class="text">세심하고 친절한 서비스로 기분 좋은 순간을 선물합니다.</div>
+                        <div class="btn"><a href="#">VIEW MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-area">
+        <div class="horizon"></div>
+        <div class="map-title">
+            Map
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8862306777046!2d127.00544551558842!3d37.557744132388756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ed7f0d9e75%3A0x49ec999d2ee31371!2z7ISc7Jq47Iug65287Zi47YWU!5e0!3m2!1sko!2skr!4v1675646780358!5m2!1sko!2skr" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="gogleMap"></iframe>
+            <div class="map-patten">
+                <img src="./img/map-background.png" alt="">
+            </div>
+        </div>
+        <div></div>
+        <div class="text-box">
+            <div class="text1">문의하기</div>
+            <div class="text2">대한민국 서울특별시 중구 동호로 249 <br>
+                Tel. 02-2233-3131 <br>
+                Fax. 02-2230-3769 <br>
+                shilla.reserve@samsung.com
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="company">
+                <a href="https://www.shillahotels.com/index.do?_gl=1*1ybwsy6*_ga*MzUxODUxNjIzLjE2NzM5NDE1OTA.*_ga_30Y6N61ES4*MTY3NTgxNjc4MS4zMS4wLjE2NzU4MTY3OTguNDMuMC4w&_ga=2.251717517.502494735.1675816781-351851623.1673941590" target="_blank"><img src="./img/footer-company1.png" alt="The Shilla"></a>
+                <a href="https://www.shillamonogram.com/mghub/index.do?lang=ko&_gl=1*1ozelo7*_ga*MzUxODUxNjIzLjE2NzM5NDE1OTA.*_ga_30Y6N61ES4*MTY3NTgxNjc4MS4zMS4xLjE2NzU4MTY4MjQuMTcuMC4w&_ga=2.147145523.502494735.1675816781-351851623.1673941590" target="_blank"><img src="./img/footer-company2.png" alt="Shilla Monogram"></a>
+                <a href="https://www.shillastay.com//stayhub/index.do?_gl=1*xqlcwx*_ga*MzUxODUxNjIzLjE2NzM5NDE1OTA.*_ga_30Y6N61ES4*MTY3NTgxNjc4MS4zMS4xLjE2NzU4MTY4NDMuNjAuMC4w&_ga=2.147145523.502494735.1675816781-351851623.1673941590" target="_blank"><img src="./img/footer-company3.png" alt="Shilla Stay"></a>
+            </div>
+        <div class="footer-main">
+            <div class="logo"><img src="./img/footer-shillaLogo.png" alt="서울신라호텔"></div>
+            <div class="text-area"> 
+                <div class="text-top">
+                    <div><a href="#">고객센터</a></div>
+                    <div><a href="#">웹사이트이용약관</a></div>
+                    <div><a href="#">이메일무단수집금지</a></div>
+                    <div><a href="#">영상정보처리기기운영방침</a></div>
+                    <div><a href="#">개인정보처리방침</a></div>
+                    <div><a href="#">호텔정책</a></div>
+                </div>
+                <div class="text-bottom">
+                    신라호텔 서울 : 서울특별시 중구 동호로 249 (우:04650)<br>
+                    대표이사 이부진 | T.02-2233-3131 | F.02-2230-3769 | E-MAIL shilla.reserve@samsung.com <br>
+                    사업자등록번호 : 203-81-43363| 통신판매신고번호 : 중구 00272호
+                </div>
+            </div>
+        </div>
+        <div class="more"><a href="https://pf.kakao.com/_uItFK" target="_blank">더 많은 정보를 만나보세요</a>
+        <a href="https://pf.kakao.com/_uItFK" target="_blank"><span class="material-symbols-outlined">
+            arrow_forward
+            </span></a></div>
+        <div class="horizon"></div>
+        <div class="footer-sub">
+            <div class="copy">Copyright (c) HOTEL SHILLA CO.,LTD. All Rights Reserved.</div> 
+            <div class="sns">
+                <a href="https://www.facebook.com/theshillahotels" target="_blank"><span class="bi bi-facebook"></span></a>
+                <a href="#"><span class="bi bi-instagram"></span></a>
+                <a href="https://www.youtube.com/channel/UCG1q-aJtEd7MKuTgk0DnGQw?view_as=subscriber" target="_blank"><span class="bi bi-youtube"></span></a>
+                <a href="https://map.naver.com/v5/search/%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94/place/12159697?placePath=%3Fentry=pll%26from=nx%26fromNxList=true" target="_blank"><span class="bi bi-map-fill"></span></a>
+            </div>
+        </div>
+        </div>
+        
+    </footer> 
+
+    <!--매직스크롤-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+
+    <!--date js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</body>
+</html>

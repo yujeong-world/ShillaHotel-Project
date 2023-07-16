@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStyle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="../img/shilla.ico">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- 애니메이션 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--구글 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--구글아이콘 화살표-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- 구글 아이콘 화살표 연습 된다면 삭제 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!--제이쿼리-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- main 내가 작성 -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- 클래스명 다 바꾸면 이 글 지우기 -->
+    <!--헤더 and 메뉴-->
+    <header>
+        <div class="logo-img"><a href="../index.html"><img src="./imges/logo.png" alt=""></a></div>
+    </header>
+    <ul class="main-menu">
+        <li class="menu-img"><a href="../index.html"><img src="./imges/logo-menu.png" alt=""></a></li>
+        <li class="reservation"><a href="#">Reservation</a></li>
+        <li class="item">
+            <a href="#" class="item-name">Offers</a>
+            <div class="content-menu">
+                <ul class="inner">
+                    <li><a href="#">Package</a></li>
+                    <li><a href="#">Event</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="item">
+            <a href="../room/index.html" class="item-name">Accommodation</a>
+            <div class="content-menu">
+                <ul class="inner">
+                    <li><a href="#">Standard</a></li>
+                    <li><a href="#">Executive</a></li>
+                    <li><a href="#">Suite</a></li>
+                    <li><a href="#">The Executive Lounge</a></li>
+                    <li><a href="#">All Rooms</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="item">
+            <a href="#" class="item-name">Dining</a>
+            <div class="content-menu">
+                <ul class="inner">
+                    <li><a href="#">Restaurant</a></li>
+                    <li><a href="#">Lounge & Bar</a></li>
+                    <li><a href="#">Bakery</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="item">
+            <a href="../LifeStyle/lifeStyle.html" class="item-name">Life Style</a>
+            <div class="content-menu">
+                <ul class="inner">
+                    <li><a href="#">Outdoor Pool</a></li>
+                    <li><a href="#">spa</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Walking Tralis</a></li>
+                    <li><a href="#">Shopping</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="item">
+            <a href="../wedding/wd.html" class="item-name">Meeting & Event</a>
+            <div class="content-menu">
+                <ul class="inner">
+                    <li><a href="#">Wedding</a></li>
+                    <li><a href="#">Meetings</a></li>
+                    <li><a href="#">Celebrations</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="item">
+            <a href="#" class="item-name">Gallery</a>
+            <div class="content-menu">
+                <ul class="inner">
+                    <li><a href="#">photo</a></li>
+                    <li><a href="#">video</a></li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+    <div class="main-slide">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./imges/hotelbar_1920_600.jpg" alt="호텔1">
+                    <div class="slide-text">
+                        <h2>Urban lsland</h2>
+                        <p class="main-slide-ontext">"도시 속 휴식의 섬"</p>
+                        <p>라이프 스타일을 즐기실 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/los_pool.png" alt="호텔2">
+                    <div class="slide-text">
+                        <h2 class="Rooffop">Rooftop Garden</h2>
+                        <p>탁 트인 전망과 편안한 휴식</p>
+                        <p>신라호텔과 함께 진정한 휴식을 누려보세요</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/hotelsnow_2.png" alt="호텔3">
+                    <div class="slide-text">
+                        <h2>Urban Lifestyle Hotel</h2>
+                        <p>전통미와 현대적 감각을 겸비하고 있는</p>
+                        <p>한국을 대표하는력셔리 신라호텔 </p>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/hotel_roomm.png" alt="호텔4">
+                    <div class="slide-text">
+                        <h2>Timeless Modern</h2>
+                        <p>디자이너 리미디오스가 담당한 서울신라</p>
+                        <p>모던하면서도 품격 있는 라이프스타일 공간 </p>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/hotel_l.png" alt="호텔5.">
+                    <div class="slide-text">
+                        <h2>Executive Lounge</h2>
+                        <p>최고 수준의 더 이그제큐티브 라운지</p>
+                        <p>신라만의 품격이 묻어나는 라이프스타일 </p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination 점모양-->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-prev">
+                <div class="material-icons">
+                    arrow_back_ios
+                </div>
+            </div>
+            <div class="swiper-next">
+                <div class="material-icons">
+                    arrow_forward_ios
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="shilla_title">
+        <h2>Shilla Hotel Seoul offers a Different</h2>
+        <h2>Class Of Comfort</h2>
+        <p>The Luxury Comfort Experience</p>
+        <p class="shilla_title_text"><a href="#">Read More</a> </p>
+    </section>
+
+
+    <!-- animate-text -->
+    <section class="animate-text animate-text-border scroll-spy">
+        <h2 class="main-text1">Facility</h2>
+
+        <div class="left-box left-box1 back-to-position to-right delay-1">
+            <img src="./imges/downpoo1.jpg" alt="goods" />
+        </div>
+        <div class="right-box right-box1 back-to-position to-left delay-1">
+            <h2 class="text test text1">Urban Island</h2>
+            <h3 class="text test text2">격이 다른 야외 수영장</h3>
+            <p class="text test text3">
+                서울 특급 호텔 최초 온수풀, 자쿠지 루프탑 카바나 등<br />
+                아웃도어 라이프 스타일을 즐기실 수 있습니다.
+            </p>
+            <h4 class="text test text4"><a href="#">예약하기</a></h4>
+        </div>
+
+    </section>
+
+    <section class="animate-text scroll-spy">
+        <h2 class="hidden">animate효과</h2>
+        <div class="left-box left-box2 back-to-position to-right delay-2">
+            <p class="text text5">Carbana</p>
+            <p class="text text6">프라이빗하고 여유로운 휴식</p>
+            <p class="text text8">
+                어반 아일랜드에서 더욱 여유로운 시간을 즐길 수 있는 다양한 스타일의<br />
+                카바나를 제안합니다.
+            </p>
+            <h4 class="text text9"><a href="#">예약하기</a></h4>
+        </div>
+        <div class="right-box right-box2 back-to-position to-left delay-2">
+            <img src="./imges/downcabana.jpg" alt="goods" />
+        </div>
+    </section>
+
+    <section class="animate-text scroll-spy">
+        <h2 class="hidden">animate효과</h2>
+
+        <div class="left-box left-box3 back-to-position to-right delay-3">
+            <img src="./imges/spa_end.jpg" alt="goods" />
+        </div>
+
+        <div class="right-box right-box3 back-to-position to-left delay-3">
+            <p class="text text10">Guerlain Spa</p>
+            <p class="text text11">도심 속 데스티네이션 스파</p>
+
+            <p class="text text12">
+                파리 겔랑 본사 노하우를 전수 받은 스파 전문가들이<br />
+                최적화된 고객 맞춤형 서비스를 제공합니다.
+            </p>
+            <h4 class="text text13"><a href="#">예약하기</a></h4>
+        </div>
+
+    </section>
+    <div class="Fitness">Fitness</div>
+
+    <section class="sub-slide">
+        <div class="inner">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./imges/inside_pool.jpg" alt="실내 수영장">
+                        <div class="smal_text">
+                            <h2>Indoor Pool</h2>
+                            <p>사계절 내내 쾌적하고 여유로운 수영을 즐길 수 있습니다.</p>
+                            <p>문의전화 02-2230-3521 | 운영시간 06:00~22:00</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/gym1.jpg" alt="실내 체육관">
+                        <div class="smal_text">
+                            <h2>Gymnasium</h2>
+                            <p>체력 관리를 위한 기능별 공간</p>
+                            <p>문의전화 02-2230-3524~5 | 운영시간 05:30~22:00</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/golf.jpg" alt="골프장">
+                        <div class="smal_text">
+                            <h2>Indoor Golf Range</h2>
+                            <p>드라이빙, 퍼팅, 클럽 피팅 등 다양한 전문 프로그램을 마련했습니다.</p>
+                            <p>문의전화 02-2230-3524~5 | 운영시간 05:30~22:00</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/store.jpg" alt="신라면세점">
+                        <div class="smal_text">
+                            <h2>Duty Free Shop</h2>
+                            <p>최고의 면세쇼핑 서비스를 제공하고 있습니다.</p>
+                            <p>문의전화 1688-1110 | 서울점 운영시간 09:00~18:30(연중무휴)</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/sauna1.jpg" alt="신라면세점">
+                        <div class="smal_text">
+                            <h2>Indoor Sauna</h2>
+                            <p>고급스러운 시설과 서비스로 휴식을 즐기실 수 있습니다.</p>
+                            <p>문의전화 02-2230-1167 | 운영시간 09:00~22:00(연중무휴)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="total_map">
+        <div class="total">
+            <h1>Walking Tralis</h1>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10639.366885498921!2d127.00250676279902!3d37.552644090520246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ed7f0d9e75%3A0x49ec999d2ee31371!2z7ISc7Jq47Iug65287Zi47YWU!5e0!3m2!1sko!2skr!4v1675735969140!5m2!1sko!2skr"
+                    width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="map_text">
+                <h2>서울 신라호텔만의 고풍스러운 성곽길</h2>
+                <p>아름다운 경관과 맑은 공기가 가득한 여유롭고 평온한 휴식 장소로서,</p>
+                <p>1.6km의 산책길을 따라 굽이굽이 펼쳐지는</p>
+                <p class="map_p">서울성곽길을 걸어가 보면 옛 숨결도 느끼실 수 있습니다.</p>
+
+                <h4 class="map_p">문의전화 02-2233-3131</h4>
+                <div class="buttons">
+                    <p>
+                        <a href="" data-modal="#modal" class="modal__trigger">Walking Trails Map</a>
+                        <a href="" data-modal="#modal2" class="modal__trigger">Course</a>
+                        <!-- <a href="" data-modal="#modal3" class="modal__trigger">5층지도</a> -->
+                    </p>
+                </div>
+
+                <p class="map_p_bottom">위치 서울 신라호텔 야외 운영시간 06:00~22:00</p>
+            </div>
+
+            <div class="backgrounfix"></div>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h1>Walking Trails Map</h1>
+                <img src="./imges/cosemap.jpg" alt="Walking Trails Map">
+
+                <!-- modal close button -->
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path
+                            d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal modal__bg" role="dialog" aria-hidden="true">
+
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h1>Course</h1>
+
+
+                <img src="./imges/img_walk_map.jpg" alt="코스">
+                <!-- modal close button -->
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path
+                            d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="company">
+                <a href="#"><img src="./imges/footer-company1.png" alt="The Shilla"></a>
+                <a href="#"><img src="./imges/footer-company2.png" alt="Shilla Monogram"></a>
+                <a href="#"><img src="./imges/footer-company3.png" alt="Shilla Stay"></a>
+            </div>
+            <div class="footer-main">
+                <div class="logo"><img src="./imges/footer-shillaLogo.png" alt="서울신라호텔"></div>
+                <div class="text-area">
+                    <div class="text-top">
+                        <div><a href="#">고객센터</a></div>
+                        <div><a href="#">웹사이트이용약관</a></div>
+                        <div><a href="#">이메일무단수집금지</a></div>
+                        <div><a href="#">영상정보처리기기운영방침</a></div>
+                        <div><a href="#">개인정보처리방침</a></div>
+                        <div><a href="#">호텔정책</a></div>
+                    </div>
+                    <div class="text-bottom">
+                        신라호텔 서울 : 서울특별시 중구 동호로 249 (우:04650)<br>
+                        대표이사 이부진 | T.02-2233-3131 | F.02-2230-3769 | E-MAIL shilla.reserve@samsung.com <br>
+                        사업자등록번호 : 203-81-43363| 통신판매신고번호 : 중구 00272호
+                    </div>
+                </div>
+            </div>
+            <div class="more"><a href="https://pf.kakao.com/_uItFK" target="_blank">더 많은 정보를 만나보세요</a>
+                <a href="https://pf.kakao.com/_uItFK" target="_blank"><span class="material-symbols-outlined">
+                        arrow_forward
+                    </span></a>
+            </div>
+            <div class="horizon"></div>
+            <div class="footer-sub">
+                <div class="copy">Copyright (c) HOTEL SHILLA CO.,LTD. All Rights Reserved.</div>
+                <div class="sns">
+                    <a href="https://www.facebook.com/theshillahotels" target="_blank"><span
+                            class="bi bi-facebook"></span></a>
+                    <a href="#"><span class="bi bi-instagram"></span></a>
+                    <a href="https://www.youtube.com/channel/UCG1q-aJtEd7MKuTgk0DnGQw?view_as=subscriber"
+                        target="_blank"><span class="bi bi-youtube"></span></a>
+                    <a href="#"><span class="bi bi-map-fill"></span></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/modal.js"></script>
+
+
+</body>
+
+</html>

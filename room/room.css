@@ -1,0 +1,407 @@
+@charset "UTF-8";
+
+/* 애니메이션-------------------------------- */
+/*시작은 안보이게*/
+ .back-to-position{opacity: 0;transition: 1s;}
+
+/* 왼 -> 오 */
+ .back-to-position.to-right{transform: translate(-150px);} 
+
+/* 오 -> 왼 */
+ .back-to-position.to-left{transform: translate(150px);} 
+ 
+.show .back-to-position{opacity: 1; transform: translate(0);}
+.show .back-to-position.delay-1{transition-delay: 0s;}
+.show .back-to-position.delay-2{transition-delay: 0.3s;}
+.show .back-to-position.delay-3{transition-delay: 0.6s;}
+.show .back-to-position.delay-4{transition-delay: 0.9s;}  
+:root {
+    --swiper-pagination-color: #F1E3C4;
+    --swiper-navigation-color: #Fff;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #f1e3c4;
+    margin:0 auto;
+    
+    z-index: 200;
+}
+ /*header .nav-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+} */
+.main-menu{
+    display: flex;
+    list-style: none;
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #f1e3c4;
+    margin:0 auto;
+    z-index: 100;
+}
+.main-menu .menu-img{width: 230px;height: 50px; margin-left: 20px; margin-left: 60px;}
+.main-menu .reservation{width: 150px; height: 50px;text-align: center;}
+.main-menu .reservation a{text-decoration: none; display: block;width: 150px; height: 40px;border: 1px solid #3E3E3E;line-height: 40px;margin-top: 15px; font-family:'Playfair Display'; color: #3E3E3E;
+    transition: all 0.8s;}
+.main-menu .reservation:hover a{background-color: rgba(201, 131, 9,70%);
+color: #fff;}
+.main-menu .item .item-name{
+    width: 150px;
+    height: 69px;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    color: #3E3E3E;
+    display: block;
+    text-decoration: none; 
+    font-size: 17px;
+    line-height: 70px;
+    margin: 0 20px;
+}
+.main-menu:nth-child(1) .item .item-name{margin-left: 150px;}
+header .logo-img{text-align: center;}
+.main-menu .item .content-menu{
+    background-color: #f1e3c4;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.main-menu .item .content-menu .inner{
+    display: flex;
+    width: 100%;
+    background-color: #f1e3c4;
+}
+.main-menu .item .content-menu .inner li{
+    list-style: none;
+    margin: 50px 30px;
+    /* margin: 50px 20px; */
+}
+.main-menu .item .content-menu .inner li a{
+    text-decoration: none;
+    font-family:'Roboto';
+    font-size: 17px;
+    color: #3E3E3E;   
+}
+.main-menu .item a:hover{
+    color:#c98309;
+    border-bottom: 1px solid #c98309;
+}
+.main-menu .item .content-menu .inner li a:hover{
+    color:#c98309;
+}
+.main-menu .item:nth-child(3) .content-menu .inner{
+    margin-left: 420px;
+}
+.main-menu .item:nth-child(4) .content-menu .inner{
+    margin-left: 350px;
+}
+.main-menu .item:nth-child(5) .content-menu .inner{
+    margin-left: 720px;
+}
+.main-menu .item:nth-child(6) .content-menu .inner{
+    margin-left: 800px;
+}
+.main-menu .item:nth-child(7) .content-menu .inner{
+    margin-left: 1100px;
+}
+.main-menu .item:nth-child(8) .content-menu .inner{
+    margin-left: 1380px;
+}
+
+/*메인 이미지 영역*/
+.main{height: 600px;width: 100%;position: relative;}
+.main-slide{height: 600px;width: 100%; transition: all 0.4s;overflow: hidden;
+overflow: hidden;margin-top:0}
+.main-slide .swiper .swiper-wrapper{width: 100%; height: 600px;
+    transition: all 1s;text-align: left;line-height: 20px;}    
+.main-slide .swiper .swiper-wrapper .swiper-slide{opacity: 5;}
+.main-slide .swiper .swiper-wrapper .swiper-slide img{width: 100%;height: 600px;}
+
+.main-slide .swiper .swiper-wrapper .slide-img1{position: relative;}
+.main-slide .swiper .swiper-wrapper .slide-img2{}
+.main-slide .swiper .swiper-wrapper .slide-img3{}
+
+
+.main-slide .swiper .swiper-wrapper .slide-img1 .swiper-text-a{ width:500px; height: 160px; text-align: center; font-size: 25px; color: #FFF; position: absolute;z-index: 10;  background:rgb(255, 255,255,0.2);
+left: 0;right: 0; bottom: 180px; top: 0; margin: auto; font-family: 'Playfair Display';position: absolute;}
+.main-slide .swiper .swiper-wrapper .slide-img2 .swiper-text-b{  width:500px; height: 160px;text-align: center; font-size: 25px; color: #FFF; position: absolute;z-index: 10;  background:rgb(255, 255,255,0.2);
+left: 0;right: 0; bottom: 180px; top: 0;margin: auto; font-family: 'Playfair Display';position: absolute;}
+.main-slide .swiper .swiper-wrapper .slide-img3 .swiper-text-c{ width:500px; height: 160px; text-align: center; font-size: 25px; color: #FFF; position: absolute;z-index: 10;  background:rgb(255, 255,255,0.2);
+left: 0;right: 0; bottom: 180px; top: 0;margin: auto; font-family: 'Playfair Display';position: absolute;}
+
+
+#swiper-tex1{line-height: 80px;font-size: 25px;}
+#swiper-tex2{font-size: 20px;line-height: 25px;}
+
+.main-slide .swiper-button-prev{color:#fff;}
+.main-slide .swiper-button-next{color:#fff}
+.main-slide .swiper-pagination{ color:#F1E3c4;
+    position: absolute;left: 0;right: 0;margin: auto;z-index: 10;bottom: 0px;width: 200px;height: 50px;}
+
+
+
+
+/*소개 영역이다*/
+.introduce{}
+.introduce .introduce-box{width: 100%;height: 600px; overflow: hidden; margin: 0 auto;line-height: 110px; margin-top:180px;
+text-align: center;}
+.introduce .introduce-box .hr{width: 800px; margin: 0 auto; border:2px solid #F1E3c4;margin-top: 120px;}
+.introduce .introduce-box .box1{font-size: 45px;color: #F1E3c4;font-family: 'Playfair Display';}
+.introduce .introduce-box .box2{font-size: 25px; color:#3E3E3E;}
+.introduce .introduce-box .box3{color: #F1E3c4;font-size: 15px;}
+
+
+
+/*스탠다드 룸 영역이다*/
+
+.standard-section .standard{width: 1200px;height: 600px; overflow: hidden; margin: 0 auto;position: relative;z-index: 1;}
+
+.standard-section .standard .standard-h{margin-bottom:50px;margin-left: 30px;}
+.standard-section .standard .standard-h p{font-size: 25px;font-family: 'Playfair Display'; }
+.standard-section .standard .standard-img{margin-left: 0;width: 1200px;}
+
+.standard-section .standard .standard-text{display: flex;position: absolute; flex-direction: column; right: 0; bottom:120px;
+line-height: 60px;right:-20px; width: 600px;} 
+.standard-section .standard .standard-text .standard-text1{font-size: 25px;font-family: 'Playfair Display';} 
+.standard-section .standard .standard-text .standard-text2{font-size: 20px; color: #000000;font-family: 'Noto Sans KR';font-weight: 400;} 
+.standard-section .standard .standard-text .standard-text3{line-height: 20px;color: #939393;} 
+
+.standard-section .standard .standard-button a{font-size: 15px;color: #DAC392; margin-right: 50px;}
+.standard-section .standard .standard-button a:hover{color: #3E2B2C;}
+
+/*이그제큐티브 룸 영역이다*/
+.executive-section .executive{width: 1200px;height: 600px; overflow: hidden; margin: 0 auto;position: relative; margin-top: 50px;}
+
+.executive-section .executive .executive-img{margin-left:600px ;width: 1200px;}
+
+.executive-section .executive .executive-text{display: flex;position: absolute; flex-direction: column; left: 0; bottom:200px;
+    line-height: 60px;width: 480px;}
+.executive-section .executive .executive-text .executive-text1{font-size: 25px;font-family: 'Playfair Display';}
+.executive-section .executive .executive-text .executive-text2{font-size: 20px; color: #000000;font-family: 'Noto Sans KR';font-weight: 400;}
+.executive-section .executive .executive-text .executive-text3{line-height: 20px;color: #939393;}
+.executive-section .executive .executive-button a{font-size: 15px;color: #DAC392; margin-right: 0;}
+.executive-section .executive .executive-button a:hover{color:#3E2B2C}
+
+
+/*스위트 룸 영역이다*/
+.suite-section .suite{width: 1200px;height: 600px; overflow: hidden; margin: 0 auto;position: relative;}
+
+.suite-section .suite .suite-img{margin-left: 0;width: 1200px;}
+.suite-section .suite .suite-img img{width: 600px;}
+
+.suite-section .suite .suite-text{display: flex;position: absolute; flex-direction: column; bottom:200px;
+    right:-20px; width: 600px;
+    line-height: 60px;}
+.suite-section .suite .suite-text .suite-text1{font-size: 25px;font-family: 'Playfair Display';}
+.suite-section .suite .suite-text .suite-text2{font-size: 20px; color: #000000;font-family: 'Noto Sans KR';font-weight: 400;}
+.suite-section .suite .suite-text .suite-text3{line-height: 20px;font-size: 15px;color: #939393;}
+
+.suite-section .suite .suite-button a{font-size: 15px;color: #DAC392; margin-right: 80px;}
+.suite-section .suite .suite-button a:hover{color: #3E2B2C;}
+
+
+/*스탠다드2 룸 영역이다*/
+.hr-division{width: 800px; margin: 0 auto; border:2px solid #F1E3c4;margin-top: 50px;}
+
+.standard-section2 .standard{width: 1200px;height: 600px; overflow: hidden; margin: 0 auto;position: relative;z-index: 1;margin-top: 200px;}
+
+.standard-section2 .standard .standard-h{margin-bottom:20px;margin-left: 30px;}
+.standard-section2 .standard .standard-h p{font-size: 25px;font-family: 'Playfair Display'; }
+.standard-section2 .standard .standard-img{margin-left: 0;width: 1200px;}
+.standard-section2 .standard .standard-img img{width: 600px; height: 400px;}
+
+.standard-section2 .standard .standard-text{display: flex;position: absolute; flex-direction: column; right: 0; bottom:150px;
+    right:-20px; width: 600px;
+line-height: 60px;} 
+.standard-section2 .standard .standard-text .standard-text1{font-size: 25px;font-family: 'Playfair Display';} 
+.standard-section2 .standard .standard-text .standard-text2{font-size: 20px; color: #000000;font-family: 'Noto Sans KR';font-weight: 400;} 
+.standard-section2 .standard .standard-text .standard-text3{line-height: 20px;color: #939393;} 
+
+.standard-section2 .standard .standard-button a{font-size: 15px;color: #DAC392;  margin-right: 50px;}
+.standard-section2 .standard .standard-button a:hover{color: #3E2B2C;}
+
+/*이그제큐티브2 룸 영역이다*/
+.executive-section2 .executive{width: 1200px;height: 600px; overflow: hidden; margin: 0 auto;position: relative;margin-top: 50px;}
+
+.executive-section2 .executive .executive-img{margin-left:600px ;}
+.executive-section2 .executive .executive-img img{width: 600px; height: 400px;}
+
+.executive-section2 .executive .executive-text{display: flex;position: absolute; flex-direction: column; left: -50px; bottom:200px;margin-left: 50px; 
+    line-height: 60px; width: 600px;}
+.executive-section2 .executive .executive-text .executive-text1{font-size: 25px;font-family: 'Playfair Display';}
+.executive-section2 .executive .executive-text .executive-text2{font-size: 20px; color: #000000;font-family: 'Noto Sans KR';font-weight: 400;}
+.executive-section2 .executive .executive-text .executive-text3{line-height: 20px;color: #939393;}
+.executive-section2 .executive .executive-button a{font-size: 15px;color: #DAC392;margin-right:15px;}
+.executive-section2 .executive .executive-button a:hover{color:#3E2B2C}
+
+
+/*스위트2 룸 영역이다*/
+.suite-section2 .suite{width: 1200px; height: 600px; overflow: hidden; margin: 0 auto;position: relative; margin-bottom: 120px;}
+
+.suite-section2 .suite .suite-img{margin-left: 0;width: 1200px;}
+.suite-section2 .suite .suite-img img{width: 600px; height: 400px;}
+
+.suite-section2 .suite .suite-text{display: flex;position: absolute; flex-direction: column;right: -50px; bottom:200px;
+    line-height: 60px; right:-20px; width: 600px;}
+.suite-section2 .suite .suite-text .suite-text1{font-size: 25px;font-family: 'Playfair Display';}
+.suite-section2 .suite .suite-text .suite-text2{font-size: 20px; color: #000000;font-family: 'Noto Sans KR';font-weight: 400;}
+.suite-section2 .suite .suite-text .suite-text3{line-height: 20px;font-size: 15px;color: #939393;}
+
+.suite-section2 .suite .suite-button a{font-size: 15px;color: #DAC392;  margin-right: 20px;}
+.suite-section2 .suite .suite-button a:hover{color: #3E2B2C;}
+ */
+
+/*예약버튼 공통*/
+.room-inner{position: absolute;width: 600px;}
+.room-inner .reservation{position: absolute;right: 0;bottom: -20px;}
+
+   /*소개의 끝 영역이다*/
+.end{height: 600px;}
+.end .end-box{width: 100%;height: 800px; overflow: hidden; margin: 0 auto;line-height: 110px; margin-top:150px;
+text-align: center; margin-bottom: 0;}
+.end .end-box .hr{width: 800px; margin: 0 auto;border:2px solid #F1E3c4;margin-bottom: 230px}
+.end .end-box .hr2{width: 800px; margin: 0 auto;border:2px solid #F1E3c4;margin-top: 150px;}
+.end .end-box .box1{line-height: 60px; font-size: 45px;color: #F1E3c4;font-family: 'Playfair Display';margin-top:0;}
+.end .end-box .box2{font-size: 25px;color: #3E3E3E;}
+.end .end-box .box3{color: #F1E3c4;}
+
+/*프로모션 이미지 영역*/
+.promotion{height: 400px;width: 100%;
+transition: all 0.4s;margin: 0 auto; margin-bottom: 450px;margin-top: 200px;}
+.promotion .promotion-text{width: 1200px;height: 220px;text-align: left;margin: 0 auto;}
+.promotion .promotion-text p{width: 280px;margin-left: 200px;font-family: 'Playfair Display';font-weight: 400;
+    font-size: 25px; }
+.promotion .swiper .swiper-slide{opacity: 0.5;transition: all 1s;position: relative;text-align: center;line-height: 20px;}
+.promotion .swiper .swiper-slide.swiper-slide-active{opacity: 1;}
+.promotion .swiper .swiper-slide .hr-img{width: 500px;border:1px solid #F1E3c4;margin: 0 auto;margin-bottom: 10px;margin-top: 5px;}
+.promotion .swiper .swiper-slide .slide-text{font-size: 18px; margin: 0 auto;width: 500px; text-align: left;}
+.promotion .swiper .swiper-slide .slide-text2{font-size: 15px;margin-top: 10px;color: #939393;text-align: left;margin: 0 auto;
+width: 500px;}
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #F1EBD6;
+    margin: 0 auto;
+    
+}
+footer .footer-container{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+footer .footer-container .company{
+    width: 1200px;
+    height: 50px;
+    /* background-color: #939393; */
+    padding-top: 50px;
+}
+
+footer .footer-container .footer-main{
+    display: flex;
+    margin-top: 80px;
+}
+footer .footer-container .footer-main .logo{
+    margin-right: 100px;
+}
+footer .footer-container .footer-main .text-area{
+    display: flex;
+    flex-direction: column;
+    color: #3e3e3e;
+    font-size: 15px;
+    font-family: 'Noto Sans KR';
+}
+footer .footer-container .footer-main .text-area .text-top{
+    display: flex;
+    margin-bottom: 30px;
+}
+footer .footer-container .footer-main .text-area .text-top a:hover{
+    color: #997321;
+    border-bottom: 1px solid #997321;
+}
+footer .footer-container .footer-main .text-area .text-top div{
+    margin-left: 30px;
+}
+footer .footer-container .footer-main .text-area .text-top div:nth-child(1){
+    margin-left: 0;
+}
+footer .footer-container .footer-main .text-area .text-top div a{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+footer .more{
+    width: 300px;
+    height: 30px;
+    border-bottom: 1px solid #3e3e3e;
+    margin-left: 900px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .more>a{
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+footer .more>a:hover{
+    color: #997321;
+}
+footer .more a{
+    display: block;
+}
+footer .more a .material-symbols-outlined:hover{
+color: #997321;
+}
+footer .more a .material-symbols-outlined{
+    transition: all 0.3s;
+}
+footer .horizon{
+    width: 100%;
+    height: 2px;
+    background-color: #3e3e3e;
+    margin-top: 20px;
+}
+footer .footer-sub{
+    margin-top: 50px;
+}
+div .footer-sub .sns{
+    width: 170px;
+    height: 35px;
+    display: flex;
+    margin-left: 1020px;
+}
+div .footer-sub .sns a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #3e3e3e;
+    margin: 0 10px;
+}
+div .footer-sub .sns a span{
+    font-size: 28px;
+    transition: all 0.5s;
+}
+div .footer-sub .sns a span:hover{
+    color: #997321;
+}
+div .footer-sub .copy{
+    font-family:'Roboto';
+    font-size: 15px;
+}
+
