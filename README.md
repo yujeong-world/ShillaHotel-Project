@@ -19,7 +19,6 @@ JavaScript와 JQuery를 사용하여 슬라이드 및 애니메이션을 중심�
 - 팀원 김재훈 : 제작, 발표
 
 ### 💻 개발 환경
-- 'JavaScript'
 - <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
@@ -30,11 +29,11 @@ JavaScript와 JQuery를 사용하여 슬라이드 및 애니메이션을 중심�
 
 ## 📌 주요 기능 미리보기 : 메인 페이지
 ### 기존 신라호텔 메인 페이지
----
+--
 ![image](https://github.com/yujeong-world/ShillaHotel-Project/assets/124220083/a74c5096-7221-4776-b82b-178703d38bd7)
 
 ### 제작 메인 페이지
----
+--
 ![image](https://github.com/yujeong-world/ShillaHotel-Project/assets/124220083/a625610b-f975-473a-af88-d8b99645c2cb)
 
 - 메인 화면에 바로 가기 예약 시스템 구현
