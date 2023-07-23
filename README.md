@@ -13,16 +13,30 @@ Html, CSS, JavaScript, JQuery 기반으로 제작한 신라호텔 웹 사이트
 4. **파비콘 제작**: 웹 사이트의 전문성과 브랜드 인식을 강화하기 위해 신라호텔의 아이덴티티에 맞는 파비콘을 디자인 및 적용하였습니다.
 
 배포 : <https://yujeong-world.github.io/ShillaHotel-Project/>
+
+
 참고한 실제 웹 페이지(신라호텔) : <https://www.shillahotels.com/index.do>
 
 ### 개발 기간
 2023.02.15~2023.03.01
 
 ### 👩‍💻 맴버 구성
-- 팀장 권유정 : 메인 페이지 제작, 공통 헤더와 푸터 제작, 디자인 제작, 통합 및 형상관리
-- 팀원 김예진 : room 페이지, ppt 제작, 파비콘 제작
-- 팀원 이다훈 : life-style 제작
-- 팀원 김재훈 : 제작, 발표
+- **팀장 권유정**:
+    - 주요 역할: 프로젝트의 리더로서 총괄적인 관리와 조율, 통합 및 형상 관리 담당
+    - 개발 업무: 메인 페이지 제작, 공통 헤더와 푸터 디자인 및 구현
+    - 디자인 업무: 웹 페이지 디자인 제작과 스타일 가이드 관리
+- **팀원 김예진**:
+    - 주요 역할: room 페이지 제작을 담당하며, 프로젝트 발표를 위한 PPT 제작과 파비콘 제작 담당
+    - 개발 업무: room 페이지의 프론트엔드 개발 및 기능 구현
+    - 디자인 업무: PPT 디자인과 파비콘 디자인 수행
+- **팀원 이다훈**:
+    - 주요 역할: life-style 페이지의 제작을 전담하며, 페이지 내부의 기능 개발과 최적화 담당
+    - 개발 업무: life-style 페이지의 프론트엔드 개발 및 관련 기능 구현
+    - 디자인 업무: 페이지 디자인 및 UI/UX 개선에 기여
+- **팀원 김재훈**:
+    - 주요 역할: 웹 사이트의 최종적인 품질 보증을 담당하며, 프로젝트 발표 및 설명을 주도
+    - 개발 업무: 웹 사이트의 품질 검수 및 버그 수정 지원
+    - 발표 업무: 프로젝트 결과물을 잘 전달하기 위한 발표와 설명 담당
 
 ### 💻 개발 환경
 - <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
@@ -47,7 +61,7 @@ Html, CSS, JavaScript, JQuery 기반으로 제작한 신라호텔 웹 사이트
 
 - 페이지 와이어 프레임(피그마) : <https://www.figma.com/file/GFDeYhlppqG5nXXaEsG6ha/%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84-%EC%A2%85%ED%95%A9?type=design&node-id=0-1&mode=design&t=bmEe6rtg4AZC2tFx-0>
 
-### About me (Portfolio)
+
 
 
 
